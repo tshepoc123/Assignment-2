@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7703A9F4"
+    tools:context=".Questions">
+
+    <TextView
+        android:id="@+id/questionsView"
+        android:layout_width="302dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Questions will appear here"
+        android:textColor="#E1262525"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="340dp"
+        android:background="#673AB7"
+        android:backgroundTint="#673AB7"
+        android:text="False"
+        android:textColor="#232121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsView" />
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="340dp"
+        android:background="#2196F3"
+        android:backgroundTint="#EEFAF5F5"
+        android:text="True"
+        android:textColor="#1F1D1D"
+        app:layout_constraintStart_toEndOf="@+id/btnFalse"
+        app:layout_constraintTop_toBottomOf="@+id/questionsView" />
+
+    <Button
+        android:id="@+id/Nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="484dp"
+        android:background="#F8FDFBFB"
+        android:backgroundTint="#E1EFE6E6"
+        android:backgroundTintMode="add"
+        android:text="Next Question"
+        android:textColor="#181717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsView" />
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="149dp"
+        android:text="Feedback"
+        android:textColor="#F2262424"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionsView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
